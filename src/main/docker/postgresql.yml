@@ -1,0 +1,11 @@
+version: '2'
+services:
+  sieuhotdeal-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/sieuhotdeal/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=sieuhotdeal
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
